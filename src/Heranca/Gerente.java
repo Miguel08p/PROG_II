@@ -8,11 +8,15 @@ public class Gerente extends Funcionario{
         this.departamento = departamento;
     }
 
+    public Gerente(String nome, Double salario){
+        super(nome, salario);
+    }
+
     public String getDepartamento() {
         return departamento;
     }
 
     public Double calculaBonificacao(){
-        return salario*15;
+        return salario*0.12;
     }
 }
